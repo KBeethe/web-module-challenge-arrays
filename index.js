@@ -60,13 +60,17 @@ Your function should accept:
 Your function should add the flavor to the front of the array and console.log the resulting array.
 
 For example addFlavor("Rainbow Sherbert", originalFlavors) should return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla Burnt Almond"] */ 
+// I don't get where the Function comes into play.
+// function addFlavor(originalFlavors){
 
-function addFlavor(originalFlavors){
-    originalFlavors.splice(0, 'Rainbow Sherbert')
-}
-addFlavor()
+//     originalFlavors.unshift("Rainbow Sherbert", originalFlavors);
 
+// }
+// addFlavor();
 
+originalFlavors.unshift("Rainbow Sherbert");
+console.log(originalFlavors)
+;
 /* Task 3: Houston, we have a problem! There are now 32 flavors in the array! Your task is to remove an item from the end of the array. 
 
 Your function should accept:
