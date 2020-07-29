@@ -86,9 +86,6 @@ function removeLastFlavor(){
   removeLastFlavor();
 
 
-originalFlavors.pop();
-console.log(originalFlavors)
-
 /* Task 4: Write a function that returns a flavor at a given index in the array.
 
 Your function should accept:
@@ -117,11 +114,12 @@ Hint: You can use .splice() for this
 
 */
 
-function removeFlavorByName(/*code here*/){
+// function removeFlavorByName(i){
+//     r = (originalFlavors.indexOf(i));
+//     console.log(originalFlavors.splice(r));
+// }
 
-    /*code here*/
-
-}
+// removeFlavorByName("Vanilla")
 
 
 /* Task 6: With all of these changes going on, we don't want to lose track of the actual, original 31 flavors. Write a function called copy that makes a copy of the array. 
@@ -133,10 +131,12 @@ Your function should accept:
 and should return a new array that is identical to the old array. You can name the new array however you'd like. */
 
 function copy(/*code here*/){
-
-    /*code here*/
-
+    let newFlavors = [...originalFlavors];
+    console.log(newFlavors);
+    console.log(originalFlavors);
 }
+
+copy();
 
 /* Task 7: July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. Write a function that checks every item in the array for a given string and returns a new array called filteredArray with just these values. Rather than hardcoding "chocolate" into your function, pass a string as a parameter, and invoke with the argument "chocolate". This way you could also filter for "Vanilla", "Sherbert", etc. when those holidays roll around.
 
