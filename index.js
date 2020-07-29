@@ -60,17 +60,15 @@ Your function should accept:
 Your function should add the flavor to the front of the array and console.log the resulting array.
 
 For example addFlavor("Rainbow Sherbert", originalFlavors) should return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla Burnt Almond"] */ 
-// I don't get where the Function comes into play.
-// function addFlavor(originalFlavors){
 
-//     originalFlavors.unshift("Rainbow Sherbert", originalFlavors);
+function addFlavor(){
 
-// }
-// addFlavor();
+    console.log(originalFlavors.unshift("Rainbow Sherbert"));
 
-originalFlavors.unshift("Rainbow Sherbert");
-console.log(originalFlavors)
-;
+}
+addFlavor();
+
+
 /* Task 3: Houston, we have a problem! There are now 32 flavors in the array! Your task is to remove an item from the end of the array. 
 
 Your function should accept:
@@ -81,11 +79,15 @@ Your function should remove a flavor from the end of the array and console.log t
 
 For example removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]*/ 
 
-function removeLastFlavor(/*code here*/){
+function removeLastFlavor(){
+    originalFlavors.pop();
+      console.log(originalFlavors)
+  }
+  removeLastFlavor();
 
-    /*code here*/
 
-}
+originalFlavors.pop();
+console.log(originalFlavors)
 
 /* Task 4: Write a function that returns a flavor at a given index in the array.
 
