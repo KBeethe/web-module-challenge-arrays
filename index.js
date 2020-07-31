@@ -115,7 +115,7 @@ Hint: You can use .splice() for this
 */
 
 function removeFlavorByName(i){
-    r = (originalFlavors.indexOf(i));
+    let r = (originalFlavors.indexOf(i));
     originalFlavors.splice(r)
     console.log(originalFlavors);
 }
@@ -157,9 +157,13 @@ DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem.
 hint - you can use the .includes method to help you solve this */
 
 function filterByWord(flavor){
-    if (let i=0; i=originalFlavors.length; i++){
-        console.log(originalFlavors.includes("flavor"));
+      let filteredArr = [];
+  for (let i = 0; i < array.length; i++) {
+    if (filteredArr[i].includes(flavor)) {
+      filteredArr.push(array[i]);
     }
+  }
+  return filteredArr;
 }
 
 filterByWord("Chocolate")
